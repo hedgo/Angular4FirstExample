@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
     template: `
     <hero-list></hero-list>
     <sales-tax></sales-tax>
+    <hero-form></hero-form>
   `
 })
 export class AppComponent {
