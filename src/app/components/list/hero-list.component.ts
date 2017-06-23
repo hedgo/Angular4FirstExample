@@ -3,6 +3,10 @@ import { Component, OnInit }   from '@angular/core';
 import { Hero }                from '../../model/hero';
 import { HeroService }         from '../../services/hero.service';
 
+import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+
 @Component({
     selector: 'hero-list',
     templateUrl: './hero-list.component.html',
@@ -16,6 +20,7 @@ export class HeroListComponent implements OnInit {
     }
 
     ngOnInit() {
+
         this.heroes = this.service.getHeroes();
     }
 
