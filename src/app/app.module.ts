@@ -10,15 +10,21 @@ import { SimpleFormComp } from './components/test1/test1.component';
 import { HeroService }         from './services/hero.service';
 import { BackendService }      from './services/backend.service';
 import { Logger }              from './services/logger.service';
+
+//4 REST
 import { HttpModule } from '@angular/http';
 
+//4 MOCKS in REST
+//import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+//import { InMemoryDataService }  from './in-memory-data.service';
 
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
+        HttpModule//,
+        //      InMemoryWebApiModule.forRoot(InMemoryDataService)
     ],
     declarations: [
         AppComponent,
